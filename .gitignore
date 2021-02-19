@@ -41,7 +41,7 @@ package-lock.json
 # BUCK
 buck-out/
 \.buckd/
-*.keystore
+#*.keystore
 
 # fastlane
 #
