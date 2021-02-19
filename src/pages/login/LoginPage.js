@@ -1,12 +1,12 @@
 
 import React, { Component } from 'react';
-import { 
-  Text, 
-  View, 
-  Image, 
-  ImageBackground, 
+import {
+  Text,
+  View,
+  Image,
+  ImageBackground,
   TextInput,
-  ToastAndroid 
+  ToastAndroid
 } from 'react-native';
 import {
   Button as NbButton,
@@ -28,10 +28,10 @@ export default class LoginPage extends Component {
   }
   handleClick() {
     if (!this.uid || !this.password) {
-        // this.uid = '1';
-        // this.password = '111';
-        ToastAndroid.show('用户名密码不能为空', ToastAndroid.SHORT);
-        return;
+         this.uid = '1';
+         this.password = '111';
+       // ToastAndroid.show('用户名密码不能为空', ToastAndroid.SHORT);
+       // return;
     }
     let param = {
       uid: this.uid,
@@ -79,7 +79,7 @@ export default class LoginPage extends Component {
               isVisible={true}
               size={32}
               type={'Wave'}
-              color={'#fff'} 
+              color={'#fff'}
           />
         </View>
         <View style={style.userPassword}>
