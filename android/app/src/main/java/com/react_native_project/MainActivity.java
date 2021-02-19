@@ -1,7 +1,6 @@
 package com.react_native_project;
 
 import com.facebook.react.ReactActivity;
-import com.theweflex.react.WeChatPackage;
 
 public class MainActivity extends ReactActivity {
 

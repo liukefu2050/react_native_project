@@ -140,6 +140,7 @@ android {
         versionCode 1
         versionName "1.0"
         vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
     }
     splits {
         abi {
@@ -198,12 +199,14 @@ android {
 
 dependencies {
     // method 1
-    compile project(':RCTWeChat')
-    compile project(':react-native-audio')
-    compile project(':react-native-doc-viewer')
+    //compile project(':RCTWeChat')
+    //compile project(':react-native-audio')
+    //compile project(':react-native-doc-viewer')
     // ------
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.facebook.react:react-native:+"  // From node_modules
+    implementation 'androidx.multidex:multidex:2.0.0'
+
 
     if (enableHermes) {
       def hermesPath = "../../node_modules/hermesvm/android/";

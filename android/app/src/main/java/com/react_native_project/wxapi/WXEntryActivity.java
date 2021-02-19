@@ -1,8 +1,8 @@
-package com.react_native_project;
+package com.react_native_project.wxapi;
 
 import android.app.Activity;
 import android.os.Bundle;
-import com.theweflex.react.WeChatModule;
+import com.theweflexwx.react.WeChatModule;
 
 public class WXEntryActivity extends Activity {
   @Override
